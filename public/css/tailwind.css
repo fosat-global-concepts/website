@@ -74,6 +74,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5rem;
   transition: transform 0.2s, box-shadow 0.2s;
   background-color: #ffffff;
+  color: inherit;
+  display: block;
+  text-decoration: none;
 }
 
 .service-card:hover {
@@ -210,6 +213,22 @@ footer a:hover {
   background-color: var(--fosat-accent);
   margin: 0.75rem auto 0;
   border-radius: 0.125rem;
+}
+
+header nav a:not(.btn-fosat-primary):hover,
+header nav a:not(.btn-fosat-primary):focus-visible {
+  color: var(--fosat-accent);
+}
+
+summary::marker {
+  content: '';
+}
+
+summary:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--fosat-accent);
+  outline-offset: 3px;
 }
 
 @media (max-width: 768px) {
