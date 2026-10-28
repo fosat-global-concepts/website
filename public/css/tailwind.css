@@ -1,0 +1,223 @@
+/* Fosat Global Concept - Brand Overrides */
+/* Primary colors derived from logo: charcoal/navy base with orange accent */
+
+:root {
+  --fosat-primary: #1a1a2e;      /* Deep navy/charcoal from black logo */
+  --fosat-secondary: #16213e;    /* Slightly lighter navy */
+  --fosat-accent: #e94560;       /* Orange-red accent for CTAs */
+  --fosat-accent-hover: #c1364e; /* Darker accent on hover */
+  --fosat-light: #f8f9fa;        /* Off-white background */
+  --fosat-text: #333333;         /* Dark text */
+  --fosat-text-light: #666666;   /* Muted text */
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--fosat-text);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--fosat-primary);
+}
+
+/* Preline component overrides */
+.hs-navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hs-navbar-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--fosat-primary) !important;
+}
+
+.btn-fosat-primary {
+  background-color: var(--fosat-accent);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-fosat-primary:hover {
+  background-color: var(--fosat-accent-hover);
+  color: #ffffff;
+}
+
+.btn-fosat-outline {
+  background-color: transparent;
+  color: var(--fosat-primary);
+  border: 2px solid var(--fosat-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-fosat-outline:hover {
+  background-color: var(--fosat-primary);
+  color: #ffffff;
+}
+
+.service-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #ffffff;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: var(--fosat-accent);
+}
+
+.service-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--fosat-light);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--fosat-accent);
+  margin-bottom: 1rem;
+}
+
+.text-fosat-primary {
+  color: var(--fosat-primary) !important;
+}
+
+.text-fosat-accent {
+  color: var(--fosat-accent) !important;
+}
+
+.bg-fosat-primary {
+  background-color: var(--fosat-primary) !important;
+}
+
+.bg-fosat-accent {
+  background-color: var(--fosat-accent) !important;
+}
+
+.border-fosat-accent {
+  border-color: var(--fosat-accent) !important;
+}
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  background-color: #25d366;
+  color: #ffffff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  animation: none;
+  background-color: #1ebe57;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(135deg, var(--fosat-primary) 0%, var(--fosat-secondary) 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Portfolio grid item */
+.portfolio-item {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #e5e5e0;
+  background: #ffffff;
+  transition: transform 0.2s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA banner */
+.cta-banner {
+  background: linear-gradient(135deg, var(--fosat-primary) 0%, var(--fosat-secondary) 100%);
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: var(--fosat-primary);
+  color: #ffffff;
+  padding: 3rem 0 1.5rem;
+}
+
+footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Utility */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 0.25rem;
+  background-color: var(--fosat-accent);
+  margin: 0.75rem auto 0;
+  border-radius: 0.125rem;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 1rem;
+    right: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.25rem;
+  }
+}
