@@ -3,6 +3,7 @@
 ## Status
 
 Static-site implementation and validation completed on 2026-10-28.
+The page structure was subsequently simplified to four core pages.
 
 ## Done
 
@@ -14,7 +15,11 @@ Static-site implementation and validation completed on 2026-10-28.
 - Corrected the Preline CDN script URL; removed a stylesheet URL that returned 404.
 - Checked all 10 HTML pages in a browser: HTTP 200, one H1 each, valid inline script syntax, no missing local references, and no broken loaded images. Checked the Contact page at a 390px viewport; no horizontal overflow. Browser reported no errors; Tailwind CDN showed its expected production warning.
 - Updated this handoff. No new dependencies or build steps were introduced.
-- `PLAN.md` was already modified before work started. It remains untouched and must not be overwritten or reverted.
+- `PLAN.md` contained prior edits; those edits were preserved while its page structure and typography references were updated for this follow-up.
+- On follow-up, consolidated company information into Home and all service summaries into Services; kept Work and Contact as distinct pages.
+- Removed the placeholder About, FAQ, and four service-detail pages; updated navigation and links to the four-page structure.
+- Removed empty testimonial, team, hours, social, and map placeholders from the live pages. Updated `PLAN.md` to reflect the new structure and Montserrat headings.
+- Rechecked local HTML links, assets, and in-page service anchors across the four remaining pages; all resolve.
 
 ## In progress
 
@@ -34,14 +39,7 @@ Static-site implementation and validation completed on 2026-10-28.
 
 ## Remaining placeholders
 
-- `[PLACEHOLDER: Facebook]` — 10 occurrences (site footer on each page).
-- `[PLACEHOLDER: Instagram]` — 10 occurrences (site footer on each page).
-- `[PLACEHOLDER: Opening hours]` — 11 occurrences (site footer on each page and Contact details).
-- `[PLACEHOLDER: Customer testimonial]` — 1 occurrence (Home).
-- `[PLACEHOLDER: FAQ content]` — 1 occurrence (FAQ).
-- `[PLACEHOLDER: Google Maps embed]` — 1 occurrence (Contact).
-- `[PLACEHOLDER: Pricing on request]` — 1 occurrence (FAQ).
-- `[PLACEHOLDER: Team details]` — 1 occurrence (About).
+- The four live HTML pages contain no `[PLACEHOLDER: ...]` sections. Missing business details in source documentation remain as documented.
 
 ## Known environment caveats
 

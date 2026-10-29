@@ -22,7 +22,7 @@
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
-            serif: ['Playfair Display', 'Georgia', 'serif'],
+            serif: ['Montserrat', 'Arial', 'sans-serif'],
           }
         }
       }
@@ -30,7 +30,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tailwind.css">
   <link rel="icon" type="image/jpeg" href="assets/images/logo-new-black.jpeg">
 </head>
@@ -43,15 +43,14 @@
       <div class="hidden items-center gap-6 md:flex">
         <a href="index.html">Home</a>
         <a href="services.html" aria-current="page">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
         <a href="contact.html">Contact</a>
         <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary">WhatsApp Us</a>
       </div>
       <details class="relative md:hidden">
         <summary class="cursor-pointer rounded border border-gray-300 px-4 py-2 font-semibold">Menu</summary>
         <div class="absolute right-0 mt-2 grid min-w-52 gap-3 rounded-lg bg-white p-4 shadow-lg">
-          <a href="index.html">Home</a><a href="services.html" aria-current="page">Services</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+          <a href="index.html">Home</a><a href="services.html" aria-current="page">Services</a><a href="portfolio.html">Work</a><a href="contact.html">Contact</a>
           <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary text-center">WhatsApp Us</a>
         </div>
       </details>
@@ -66,25 +65,29 @@
     </section>
     <section class="px-4 py-16">
       <div class="container mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
-        <article id="large-format" class="service-card">
+        <article id="large-format" class="service-card scroll-mt-24">
           <img src="assets/images/rollup-banner/rollup-banner-01.jpeg" alt="Rollup banner" class="mb-5 h-56 w-full rounded-lg object-cover" loading="lazy">
           <h2 class="mb-3 font-serif text-2xl font-bold">Large Format Printing</h2>
-          <a href="services/large-format.html" class="font-semibold text-fosat-accent">View Large Format Printing &rarr;</a>
+          <p class="mb-4 leading-relaxed">Printed displays for making your message visible, including rollup and wall banners.</p>
+          <a href="contact.html" class="font-semibold text-fosat-accent">Ask about this service &rarr;</a>
         </article>
-        <article id="direct-image" class="service-card">
+        <article id="direct-image" class="service-card scroll-mt-24">
           <img src="assets/images/picture-frame/picture-frame-01.jpeg" alt="Picture frame" class="mb-5 h-56 w-full rounded-lg object-cover" loading="lazy">
           <h2 class="mb-3 font-serif text-2xl font-bold">Direct Image Printing</h2>
-          <a href="services/direct-image.html" class="font-semibold text-fosat-accent">View Direct Image Printing &rarr;</a>
+          <p class="mb-4 leading-relaxed">Turn images and designs into printed pieces such as picture frames and personalised celebration prints.</p>
+          <a href="contact.html" class="font-semibold text-fosat-accent">Ask about this service &rarr;</a>
         </article>
-        <article id="branding" class="service-card">
+        <article id="branding" class="service-card scroll-mt-24">
           <img src="assets/images/shirts/shirts-01.jpeg" alt="Printed shirts" class="mb-5 h-56 w-full rounded-lg object-cover" loading="lazy">
           <h2 class="mb-3 font-serif text-2xl font-bold">Branding</h2>
-          <a href="services/branding.html" class="font-semibold text-fosat-accent">View Branding &rarr;</a>
+          <p class="mb-4 leading-relaxed">Branded items for businesses, events, and organisations, including shirts, souvenir bags, and plaques.</p>
+          <a href="contact.html" class="font-semibold text-fosat-accent">Ask about this service &rarr;</a>
         </article>
-        <article id="general-printing" class="service-card">
+        <article id="general-printing" class="service-card scroll-mt-24">
           <img src="assets/images/book/book-01.jpeg" alt="Printed book" class="mb-5 h-56 w-full rounded-lg object-cover" loading="lazy">
           <h2 class="mb-3 font-serif text-2xl font-bold">General Printing</h2>
-          <a href="services/general-printing.html" class="font-semibold text-fosat-accent">View General Printing &rarr;</a>
+          <p class="mb-4 leading-relaxed">Everyday print materials such as books, calendars, and flyers.</p>
+          <a href="contact.html" class="font-semibold text-fosat-accent">Ask about this service &rarr;</a>
         </article>
       </div>
     </section>
@@ -99,11 +102,10 @@
     </section>
   </main>
   <footer class="px-4 py-12">
-    <div class="container mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="container mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <div><img src="assets/images/logo-new-black.jpeg" alt="Fosat Global Concept" class="mb-4 h-14 w-auto"><p class="text-sm text-gray-300">Home of high quality printing</p></div>
       <div><h2 class="mb-3 font-semibold text-white">Contact</h2><p class="mb-2 text-sm text-gray-300">2, Alhaja Senatu Road<br>Morogbo Agbara, Lagos</p><p class="mb-2 text-sm text-gray-300"><a href="tel:08068621420">08068621420</a></p><p class="text-sm text-gray-300"><a href="mailto:Fosatassociate@gmail.com">Fosatassociate@gmail.com</a></p></div>
-      <div><h2 class="mb-3 font-semibold text-white">Explore</h2><ul class="grid gap-2 text-sm"><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div><h2 class="mb-3 font-semibold text-white">Social</h2><p class="text-sm text-gray-300">[PLACEHOLDER: Instagram]</p><p class="mt-2 text-sm text-gray-300">[PLACEHOLDER: Facebook]</p><p class="mt-4 text-sm text-gray-300">[PLACEHOLDER: Opening hours]</p></div>
+      <div><h2 class="mb-3 font-semibold text-white">Explore</h2><ul class="grid gap-2 text-sm"><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     </div>
     <p class="container mx-auto mt-8 max-w-7xl border-t border-gray-700 pt-5 text-center text-sm text-gray-400">Fosat Global Concept · RC: 3274141</p>
   </footer>

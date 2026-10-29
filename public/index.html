@@ -22,7 +22,7 @@
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
-            serif: ['Playfair Display', 'Georgia', 'serif'],
+            serif: ['Montserrat', 'Arial', 'sans-serif'],
           }
         }
       }
@@ -30,7 +30,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tailwind.css">
   <link rel="icon" type="image/jpeg" href="assets/images/logo-new-black.jpeg">
 </head>
@@ -43,8 +43,7 @@
       <div class="hidden items-center gap-6 md:flex">
         <a href="index.html" aria-current="page">Home</a>
         <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
         <a href="contact.html">Contact</a>
         <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary">WhatsApp Us</a>
       </div>
@@ -53,8 +52,7 @@
         <div class="absolute right-0 mt-2 grid min-w-52 gap-3 rounded-lg bg-white p-4 shadow-lg">
           <a href="index.html" aria-current="page">Home</a>
           <a href="services.html">Services</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="about.html">About</a>
+          <a href="portfolio.html">Work</a>
           <a href="contact.html">Contact</a>
           <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary text-center">WhatsApp Us</a>
         </div>
@@ -80,22 +78,22 @@
       <div class="container mx-auto max-w-7xl">
         <h2 class="section-title font-serif">Our Printing Services</h2>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <a class="service-card" href="services/large-format.html">
+          <a class="service-card" href="services.html#large-format">
             <img src="assets/images/rollup-banner/rollup-banner-01.jpeg" alt="Rollup banner" class="mb-5 h-48 w-full rounded-lg object-cover" loading="lazy">
             <h3 class="mb-2 text-xl font-semibold">Large Format Printing</h3>
             <span class="text-fosat-accent font-semibold">Explore service &rarr;</span>
           </a>
-          <a class="service-card" href="services/direct-image.html">
+          <a class="service-card" href="services.html#direct-image">
             <img src="assets/images/picture-frame/picture-frame-01.jpeg" alt="Picture frame" class="mb-5 h-48 w-full rounded-lg object-cover" loading="lazy">
             <h3 class="mb-2 text-xl font-semibold">Direct Image Printing</h3>
             <span class="text-fosat-accent font-semibold">Explore service &rarr;</span>
           </a>
-          <a class="service-card" href="services/branding.html">
+          <a class="service-card" href="services.html#branding">
             <img src="assets/images/shirts/shirts-01.jpeg" alt="Printed shirts" class="mb-5 h-48 w-full rounded-lg object-cover" loading="lazy">
             <h3 class="mb-2 text-xl font-semibold">Branding</h3>
             <span class="text-fosat-accent font-semibold">Explore service &rarr;</span>
           </a>
-          <a class="service-card" href="services/general-printing.html">
+          <a class="service-card" href="services.html#general-printing">
             <img src="assets/images/book/book-01.jpeg" alt="Printed book" class="mb-5 h-48 w-full rounded-lg object-cover" loading="lazy">
             <h3 class="mb-2 text-xl font-semibold">General Printing</h3>
             <span class="text-fosat-accent font-semibold">Explore service &rarr;</span>
@@ -104,25 +102,49 @@
       </div>
     </section>
 
-    <section class="px-4 py-14">
-      <div class="container mx-auto max-w-4xl rounded-xl border border-gray-200 p-8 text-center">
-        <h2 class="mb-4 font-serif text-2xl font-bold">Customer Feedback</h2>
-        <p>[PLACEHOLDER: Customer testimonial]</p>
-      </div>
-    </section>
-
     <section class="px-4 py-16">
       <div class="container mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
         <div>
-          <p class="mb-3 font-semibold uppercase tracking-wider text-fosat-accent">Established since 2008</p>
-          <h2 class="mb-5 font-serif text-3xl font-bold">Printing by Fosat Global Concept</h2>
-          <p class="mb-6 leading-relaxed">Fosat Global Concept is home of high quality printing. The company is established since 2008 and registered with RC: 3274141.</p>
-          <a href="about.html" class="btn-fosat-outline">About Fosat</a>
+          <p class="mb-3 font-semibold uppercase tracking-wider text-fosat-accent">Established in 2008 · RC: 3274141</p>
+          <h2 class="mb-5 font-serif text-3xl font-bold">About Fosat Global Concept</h2>
+          <p class="mb-4 leading-relaxed">Fosat Global Concept is a Lagos-based printing business, established in 2008 and registered as RC 3274141. We provide large format and direct image printing, branding, and general printing.</p>
+          <p class="leading-relaxed">Visit us at 2, Alhaja Senatu Road, Morogbo Agbara, Lagos, or get in touch to discuss your print project.</p>
         </div>
-        <video class="w-full rounded-xl object-cover shadow-lg" controls playsinline preload="metadata" poster="assets/images/wall-banner/wall-banner-01.jpeg">
-          <source src="assets/videos/machine_printing_banner.mp4" type="video/mp4">
-          Your browser does not support the video element.
-        </video>
+
+        <div class="relative overflow-hidden rounded-xl border border-gray-200 bg-black shadow-lg">
+          <div class="video-carousel">
+            <div class="carousel-slide active">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+                <source src="assets/videos/machine_printing_banner.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-slide hidden">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+                <source src="assets/videos/machine_printing_labels.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-slide hidden">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+                <source src="assets/videos/man_hand_folding_shirt.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-slide hidden">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+                <source src="assets/videos/man_operating_machine.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-slide hidden">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+                <source src="assets/videos/man_operating_machine_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="absolute inset-x-0 bottom-4 flex items-center justify-center gap-2">
+            <button type="button" class="carousel-prev inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-lg font-bold text-fosat-primary shadow-md transition hover:bg-white" aria-label="Previous video">&larr;</button>
+            <button type="button" class="carousel-next inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-lg font-bold text-fosat-primary shadow-md transition hover:bg-white" aria-label="Next video">&rarr;</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -137,7 +159,7 @@
           <a href="portfolio.html"><img src="assets/images/souvenir-bags/souvenir-bags-01.jpeg" alt="Souvenir bags" class="h-40 w-full rounded-lg object-cover" loading="lazy"></a>
           <a href="portfolio.html"><img src="assets/images/wedding-and-birthday/wedding-and-birthday-01.jpeg" alt="Wedding and birthday printing" class="h-40 w-full rounded-lg object-cover" loading="lazy"></a>
         </div>
-        <div class="mt-8 text-center"><a href="portfolio.html" class="btn-fosat-outline">View Portfolio</a></div>
+        <div class="mt-8 text-center"><a href="portfolio.html" class="btn-fosat-outline">See our work</a></div>
       </div>
     </section>
 
@@ -152,7 +174,7 @@
   </main>
 
   <footer class="px-4 py-12">
-    <div class="container mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="container mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <div>
         <img src="assets/images/logo-new-black.jpeg" alt="Fosat Global Concept" class="mb-4 h-14 w-auto">
         <p class="text-sm text-gray-300">Home of high quality printing</p>
@@ -167,22 +189,59 @@
         <h2 class="mb-3 font-semibold text-white">Explore</h2>
         <ul class="grid gap-2 text-sm">
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Work</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
         </ul>
-      </div>
-      <div>
-        <h2 class="mb-3 font-semibold text-white">Social</h2>
-        <p class="text-sm text-gray-300">[PLACEHOLDER: Instagram]</p>
-        <p class="mt-2 text-sm text-gray-300">[PLACEHOLDER: Facebook]</p>
-        <p class="mt-4 text-sm text-gray-300">[PLACEHOLDER: Opening hours]</p>
       </div>
     </div>
     <p class="container mx-auto mt-8 max-w-7xl border-t border-gray-700 pt-5 text-center text-sm text-gray-400">Fosat Global Concept · RC: 3274141</p>
   </footer>
   <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat with Fosat Global Concept on WhatsApp">WA</a>
   <script src="https://cdn.jsdelivr.net/npm/preline@2.7.0/dist/preline.js"></script>
+  <script>
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+    let currentIndex = 0;
+
+    const showSlide = (index) => {
+      slides.forEach((slide, i) => {
+        const isActive = i === index;
+        slide.classList.toggle('active', isActive);
+        slide.classList.toggle('hidden', !isActive);
+        const video = slide.querySelector('video');
+        if (video) {
+          if (isActive) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+            video.currentTime = 0;
+          }
+        }
+      });
+    };
+
+    slides.forEach((slide, index) => {
+      const video = slide.querySelector('video');
+      video.addEventListener('ended', () => {
+        if (index === currentIndex) {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        }
+      });
+    });
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    showSlide(currentIndex);
+  </script>
 </body>
 </html>
