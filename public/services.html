@@ -47,18 +47,30 @@
         <a href="contact.html">Contact</a>
         <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary">WhatsApp Us</a>
       </div>
-      <details class="static ml-auto mr-4 md:hidden">
-        <summary class="cursor-pointer list-none rounded border border-gray-300 p-2" aria-label="Toggle navigation menu">
-          <span class="sr-only">Menu</span>
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </summary>
-        <div class="absolute left-0 right-0 top-full z-50 grid gap-3 bg-white p-4 shadow-lg">
-          <a href="index.html">Home</a><a href="services.html" aria-current="page">Services</a><a href="portfolio.html">Work</a><a href="contact.html">Contact</a>
-          <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary text-center">WhatsApp Us</a>
+      <!-- Mobile menu trigger (Preline offcanvas) -->
+      <button type="button" class="ml-auto mr-4 md:hidden cursor-pointer list-none rounded border border-gray-300 p-2" data-hs-overlay="#mobile-menu" aria-controls="mobile-menu" aria-haspopup="dialog" aria-label="Toggle navigation menu">
+        <span class="sr-only">Menu</span>
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Mobile offcanvas menu (Preline overlay) -->
+      <div id="mobile-menu" class="hs-overlay fixed inset-y-0 left-0 z-50 w-80 hidden bg-white shadow-xl" data-hs-overlay-options='{"placement":"left","backdrop":true,"keyboard":true}' role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title" tabindex="-1">
+        <div class="p-4">
+          <div class="flex justify-between items-center mb-4 border-b border-gray-200 pb-2">
+            <h3 id="mobile-menu-title" class="text-lg font-semibold text-fosat-primary">Menu</h3>
+            <button type="button" data-hs-overlay="#mobile-menu" class="text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close menu">×</button>
+          </div>
+          <nav class="mt-4 space-y-2">
+            <a href="index.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors">Home</a>
+            <a href="services.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors" aria-current="page">Services</a>
+            <a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors">Work</a>
+            <a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors">Contact</a>
+            <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-lg bg-fosat-primary text-white text-center hover:bg-fosat-accent transition-colors">WhatsApp Us</a>
+          </nav>
         </div>
-      </details>
+      </div>
     </nav>
   </header>
   <main>

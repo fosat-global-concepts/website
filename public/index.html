@@ -47,21 +47,30 @@
         <a href="contact.html">Contact</a>
         <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary">WhatsApp Us</a>
       </div>
-      <details class="static ml-auto mr-4 md:hidden">
-        <summary class="cursor-pointer list-none rounded border border-gray-300 p-2" aria-label="Toggle navigation menu">
-          <span class="sr-only">Menu</span>
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </summary>
-        <div class="absolute left-0 right-0 top-full z-50 grid gap-3 bg-white p-4 shadow-lg">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="services.html">Services</a>
-          <a href="portfolio.html">Work</a>
-          <a href="contact.html">Contact</a>
-          <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="btn-fosat-primary text-center">WhatsApp Us</a>
+      <!-- Mobile menu trigger (Preline offcanvas) -->
+      <button type="button" class="ml-auto mr-4 md:hidden cursor-pointer list-none rounded border border-gray-300 p-2" data-hs-overlay="#mobile-menu" aria-controls="mobile-menu" aria-haspopup="dialog" aria-label="Toggle navigation menu">
+        <span class="sr-only">Menu</span>
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Mobile offcanvas menu (Preline overlay) -->
+      <div id="mobile-menu" class="hs-overlay fixed inset-y-0 left-0 z-50 w-80 hidden bg-white shadow-xl" data-hs-overlay-options='{"placement":"left","backdrop":true,"keyboard":true}' role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title" tabindex="-1">
+        <div class="p-4">
+          <div class="flex justify-between items-center mb-4 border-b border-gray-200 pb-2">
+            <h3 id="mobile-menu-title" class="text-lg font-semibold text-fosat-primary">Menu</h3>
+            <button type="button" data-hs-overlay="#mobile-menu" class="text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close menu">×</button>
+          </div>
+          <nav class="mt-4 space-y-2">
+            <a href="index.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors" aria-current="page">Home</a>
+            <a href="services.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors">Services</a>
+            <a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors">Work</a>
+            <a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-fosat-primary transition-colors">Contact</a>
+            <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-lg bg-fosat-primary text-white text-center hover:bg-fosat-accent transition-colors">WhatsApp Us</a>
+          </nav>
         </div>
-      </details>
+      </div>
     </nav>
   </header>
 
@@ -116,38 +125,45 @@
           <p class="leading-relaxed">Visit us at 2, Alhaja Senatu Road, Morogbo Agbara, Lagos, or get in touch to discuss your print project.</p>
         </div>
 
-        <div class="relative overflow-hidden rounded-xl border border-gray-200 bg-black shadow-lg">
-          <div class="video-carousel">
-            <div class="carousel-slide active">
-              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+        <div data-video-carousel class="relative overflow-hidden rounded-xl border border-gray-200 bg-black shadow-lg">
+          <div data-video-track class="flex transition-transform duration-500">
+            <div class="w-full shrink-0">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" muted playsinline>
                 <source src="assets/videos/machine_printing_banner.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="carousel-slide hidden">
-              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+            <div class="w-full shrink-0">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" muted playsinline>
                 <source src="assets/videos/machine_printing_labels.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="carousel-slide hidden">
-              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+            <div class="w-full shrink-0">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" muted playsinline>
                 <source src="assets/videos/man_hand_folding_shirt.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="carousel-slide hidden">
-              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+            <div class="w-full shrink-0">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" muted playsinline>
                 <source src="assets/videos/man_operating_machine.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="carousel-slide hidden">
-              <video class="h-[320px] w-full object-cover md:h-[420px]" autoplay muted playsinline>
+            <div class="w-full shrink-0">
+              <video class="h-[320px] w-full object-cover md:h-[420px]" muted playsinline>
                 <source src="assets/videos/man_operating_machine_2.mp4" type="video/mp4">
               </video>
             </div>
           </div>
-
-          <div class="absolute inset-x-0 bottom-4 flex items-center justify-center gap-2">
-            <button type="button" class="carousel-prev inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-lg font-bold text-fosat-primary shadow-md transition hover:bg-white" aria-label="Previous video">&larr;</button>
-            <button type="button" class="carousel-next inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-lg font-bold text-fosat-primary shadow-md transition hover:bg-white" aria-label="Next video">&rarr;</button>
+          <div class="absolute inset-x-0 bottom-4 flex justify-center gap-2">
+            <button type="button" data-video-previous class="inline-flex size-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-fosat-accent" aria-label="Previous video">
+              <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <button type="button" data-video-next class="inline-flex size-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-fosat-accent" aria-label="Next video">
+              <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -204,49 +220,43 @@
   <a href="https://wa.me/2348068621420" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat with Fosat Global Concept on WhatsApp">WA</a>
   <script src="https://cdn.jsdelivr.net/npm/preline@2.7.0/dist/preline.js"></script>
   <script>
-    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
-    let currentIndex = 0;
+    const videoCarousel = document.querySelector('[data-video-carousel]');
+    const videoTrack = videoCarousel.querySelector('[data-video-track]');
+    const videoSlides = [...videoTrack.children];
+    const videos = videoSlides.map((slide) => slide.querySelector('video'));
+    let activeVideoIndex = 0;
 
-    const showSlide = (index) => {
-      slides.forEach((slide, i) => {
-        const isActive = i === index;
-        slide.classList.toggle('active', isActive);
-        slide.classList.toggle('hidden', !isActive);
-        const video = slide.querySelector('video');
-        if (video) {
-          if (isActive) {
-            video.play().catch(() => {});
-          } else {
-            video.pause();
-            video.currentTime = 0;
-          }
+    function showVideo(index) {
+      activeVideoIndex = (index + videos.length) % videos.length;
+      videoTrack.style.transform = `translateX(-${activeVideoIndex * 100}%)`;
+
+      videos.forEach((video, videoIndex) => {
+        video.pause();
+        if (videoIndex !== activeVideoIndex) video.currentTime = 0;
+      });
+
+      videos[activeVideoIndex].currentTime = 0;
+      videos[activeVideoIndex].play().catch((error) => {
+        if (error.name !== 'AbortError') {
+          console.error('Carousel video playback failed.', error);
         }
       });
-    };
+    }
 
-    slides.forEach((slide, index) => {
-      const video = slide.querySelector('video');
+    videos.forEach((video, videoIndex) => {
       video.addEventListener('ended', () => {
-        if (index === currentIndex) {
-          currentIndex = (currentIndex + 1) % slides.length;
-          showSlide(currentIndex);
-        }
+        if (videoIndex === activeVideoIndex) showVideo(activeVideoIndex + 1);
       });
     });
 
-    prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      showSlide(currentIndex);
+    videoCarousel.querySelector('[data-video-previous]').addEventListener('click', () => {
+      showVideo(activeVideoIndex - 1);
+    });
+    videoCarousel.querySelector('[data-video-next]').addEventListener('click', () => {
+      showVideo(activeVideoIndex + 1);
     });
 
-    nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
-    });
-
-    showSlide(currentIndex);
+    showVideo(activeVideoIndex);
   </script>
 </body>
 </html>
